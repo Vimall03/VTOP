@@ -1,13 +1,388 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #171616;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.body-dark{
+  background-color: #171616;
+  transition: ease-in-out 500ms;
 }
+.body-light{
+  background-color: #dce5e6;
+  transition: ease-in-out 500ms;
+}
+* {
+  cursor: default;
+}
+
+
+.fa-plus-circle {
+  cursor: pointer;
+}
+
+.navbar-brand {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.navbar-color {
+  background-color: #0c0d0c;
+  transition: ease-in-out 500ms;
+}
+.highlight-color {
+  background-color: #262626;
+  transition: ease-in-out 500ms;
+}
+.card-login {
+  background: #0c0d0c;
+  transition: ease-in-out 500ms;
+}
+.card-spotlight {
+  background: #0c0d0c;
+  transition: ease-in-out 500ms;
+}
+.card-registered-courses {
+  height: 200px;
+  background: #0c0d0c;
+  transition: ease-in-out 500ms;
+}
+.card-borders {
+  border-color: #575868;
+  transition: ease-in-out 500ms;
+}
+
+
+.navbar-color-light {
+  background-color: #dce5e6;
+  transition: ease-in-out 500ms;
+}
+.highlight-color-light {
+  background-color: #262626;
+  transition: ease-in-out 500ms;
+}
+.card-login-light {
+  background: #dce5e6;
+  transition: ease-in-out 500ms;
+}
+.card-spotlight-light {
+  background: #dce5e6;
+  transition: ease-in-out 500ms;
+}
+.card-registered-courses-light {
+  height: 200px;
+  background: #dce5e6;
+  transition: ease-in-out 500ms;
+}
+.card-borders-light {
+  border-color: #000000;
+  transition: ease-in-out 500ms;
+}
+
+
+.card-text-height {
+  height: 200px;
+}
+
+
+.card {
+  box-shadow: 0 0px 15px 0 rgb(16, 6, 31);
+}
+
+#student:hover {
+  transition: ease-in-out 500ms;
+  box-shadow: 0 0px 20px rgba(0, 84, 253, 0.9);
+}
+
+#employee:hover {
+  transition: ease-in-out 500ms;
+  box-shadow: 0 0px 20px rgba(255, 193, 7, 0.9);
+}
+
+#parent:hover {
+  transition: ease-in-out 500ms;
+  box-shadow: 0 0px 20px rgba(4, 116, 0, 0.9);
+}
+
+#alumini:hover {
+  transition: ease-in-out 500ms;
+  box-shadow: 0 0px 20px rgba(0, 228, 253, 0.9);
+}
+
+#student:not(:hover),
+#employee:not(:hover),
+#parent:not(:hover),
+#alumini:not(:hover) {
+  transition: ease-in-out 500ms;
+  box-shadow: 0 0px 15px 0 rgba(16, 6, 31, 1);
+}
+
+/* .shadow-bottom {
+  box-shadow: 0 0px 0px 0 rgba(80, 39, 129, 1);
+} */
+
+.custom-table {
+  width: 100%;
+  background: transparent;
+}
+
+table tr {
+  height: 50px;
+  border-bottom: 1px solid #575868;
+}
+
+table tr:first-child {
+  border-top: 1px solid #ddd;
+}
+
+table tr:last-child {
+  border: 0px solid #ddd;
+}
+
+tr th,
+tr td {
+  padding: 10px;
+}
+
+.span-width {
+  padding: auto;
+  width: 50px;
+}
+.card-scroll {
+  height: 40vh;
+  overflow-y: auto;
+}
+.card-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.card-scroll::-webkit-scrollbar-track {
+  background-color: #343541;
+  border-radius: 100px;
+}
+
+.card-scroll::-webkit-scrollbar-thumb {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+
+.card-scroll-light {
+  height: 40vh;
+  overflow-y: auto;
+}
+.card-scroll-light::-webkit-scrollbar {
+  width: 5px;
+}
+
+.card-scroll-light::-webkit-scrollbar-track {
+  background-color: #656773;
+  border-radius: 100px;
+}
+
+.card-scroll-light::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 100px;
+}
+
+.card-scroll-x {
+  
+  overflow-x: auto;
+}
+.card-scroll-x::-webkit-scrollbar {
+  height: 4px;
+}
+
+.card-scroll-x::-webkit-scrollbar-track {
+  background-color: #343541;
+  border-radius: 100px;
+}
+
+.card-scroll-x::-webkit-scrollbar-thumb {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+
+.sidebar-shadow {
+  box-shadow: 0 0px 100px 0 rgba(80, 39, 129, 1);
+}
+.card-event {
+  background-color: #473f52;
+  border: 0;
+}
+
+.modal-bg {
+  background-color: #10061ff1;
+  border-color: #e4e4e4;
+  box-shadow: 0 0px 30px 0 rgba(16, 6, 31, 1);
+}
+.fa-plus-circle {
+  color: white;
+  transition: 200ms;
+}
+.fa-plus-circle:hover {
+  border-radius: 50px;
+  box-shadow: 0 0px 15px 0 rgb(255, 255, 255);
+}
+.btn-css {
+  color: white;
+  transition: 200ms;
+}
+.btn-css:hover {
+  border-radius: 50px;
+  box-shadow: 0 0px 15px 0 rgb(255, 255, 255);
+}
+.cgpa {
+  font-size: 108px;
+}
+.main-content {
+  overflow-y: auto;
+}
+
+
+/* @media only screen and (max-width: 767px) {
+  .sidebarScroll {
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    height: 100vh;
+  }
+} */
+
+@media only screen and (min-width: 768px) {
+
+  .sidebarScroll {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 100vh;
+  }
+}
+/* .sidebarScroll {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  height: 100vh;
+} */
+
+.fira-sans-thin {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.fira-sans-extralight {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.work-sans-semibold {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.fira-sans-regular {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-sans-medium {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.card-title {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.fira-sans-bold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fira-sans-extrabold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.fira-sans-black {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.fira-sans-thin-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.fira-sans-extralight-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.fira-sans-light-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.card-subtitle {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.fira-sans-medium-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.fira-sans-semibold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.fira-sans-bold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.fira-sans-extrabold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.fira-sans-black-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+.custom-table th, .custom-table td {
+  padding: 10px; /* Adjust the padding value as needed */
+  font-weight: bolder;
+}
+.custom-table th {
+  padding: 5px 15px; /* Different padding for headers */
+}
+
+.custom-table td {
+  padding: 10px;
+}
+
